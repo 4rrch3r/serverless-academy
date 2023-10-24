@@ -7,6 +7,7 @@
     "start": "node index.js"
   },
   "author": "Igor Pilipchuk",
+  "type":"module",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^9.2.11"
