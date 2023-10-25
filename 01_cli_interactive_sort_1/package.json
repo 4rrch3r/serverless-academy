@@ -6,6 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Igor Pilipchuk",
   "license": "ISC"
 }

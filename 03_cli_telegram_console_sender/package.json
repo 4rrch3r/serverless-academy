@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index"
   },
-  "author": "",
+  "author": "Igor Pilipchuk",
   "license": "ISC",
   "dependencies": {
     "commander": "^11.1.0",
