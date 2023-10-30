@@ -1,0 +1,12 @@
+{
+  "name": "07_grouping_vacantions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Igor Pilipchuk",
+  "type":"module",
+  "license": "ISC"
+}
