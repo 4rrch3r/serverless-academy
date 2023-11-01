@@ -1,45 +1,52 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.uniqueWordsAndNumbersSort = exports.uniqueWordsSort = exports.lettersRaisingSort = exports.numbersDecreasingSort = exports.numbersRaisingSort = exports.alphabeticalSort = void 0;
-const separateValues_1 = require("../utils/separateValues");
+
+import { separateNumbers,separateWords } from "./separateValues.js";
 //Sort words by name (from A to Z)
-function alphabeticalSort(inputData) {
-    let words = (0, separateValues_1.separateWords)(inputData);
-    words.sort((a, b) => a.localeCompare(b));
-    return words;
+function alphabeticalSort(inputData)
+{
+  let words = separateWords(inputData);
+  words.sort((a,b)=>a.localeCompare(b));
+  return words;
 }
-exports.alphabeticalSort = alphabeticalSort;
 //Sort digits from the smallest to biggest
-function numbersRaisingSort(inputData) {
-    let numbers = (0, separateValues_1.separateNumbers)(inputData);
-    numbers.sort((a, b) => a - b);
-    return numbers;
+function numbersRaisingSort(inputData)
+{
+  let numbers = separateNumbers(inputData);
+  numbers.sort((a, b) => a - b);
+  return numbers;
 }
-exports.numbersRaisingSort = numbersRaisingSort;
 //Sort digits from the biggest to smallest
-function numbersDecreasingSort(inputData) {
-    let numbers = (0, separateValues_1.separateNumbers)(inputData);
-    numbers.sort((a, b) => b - a);
-    return numbers;
+function numbersDecreasingSort(inputData)
+{
+  let numbers = separateNumbers(inputData);
+  numbers.sort((a, b) => b - a);
+  return numbers;
 }
-exports.numbersDecreasingSort = numbersDecreasingSort;
 //Sort words by quantity of letters
-function lettersRaisingSort(inputData) {
-    let words = (0, separateValues_1.separateWords)(inputData);
-    words.sort((a, b) => a.length - b.length);
-    return words;
+function lettersRaisingSort(inputData)
+{
+  let words = separateWords(inputData);
+  words.sort((a, b) => a.length - b.length);
+  return words;
 }
-exports.lettersRaisingSort = lettersRaisingSort;
 //Filters to get only unique words
-function uniqueWordsSort(inputData) {
-    let words = (0, separateValues_1.separateWords)(inputData);
-    words = Array.from(new Set(words));
-    return words;
+function uniqueWordsSort(inputData)
+{
+  let words = separateWords(inputData);
+  words = Array.from(new Set(words));
+  return words;
 }
-exports.uniqueWordsSort = uniqueWordsSort;
 //Filters to get only unique words and numbers
-function uniqueWordsAndNumbersSort(inputData) {
-    let words = Array.from(new Set(inputData.split(' ')));
-    return words;
+function uniqueWordsAndNumbersSort(inputData)
+{
+  let words= Array.from(new Set(inputData.split(' ')));
+  return words;
 }
-exports.uniqueWordsAndNumbersSort = uniqueWordsAndNumbersSort;
+
+export {
+  alphabeticalSort,
+  numbersRaisingSort,
+  numbersDecreasingSort,
+  lettersRaisingSort,
+  uniqueWordsSort,
+  uniqueWordsAndNumbersSort
+};

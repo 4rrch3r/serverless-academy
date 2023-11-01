@@ -7,5 +7,6 @@
     "start": "node index.js"
   },
   "author": "Igor Pilipchuk",
+  "type": "module",
   "license": "ISC"
 }
