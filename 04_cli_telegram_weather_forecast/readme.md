@@ -3,8 +3,7 @@
 This task is a good way to practice and understand: what third-party REST APIs are and how to work with them.<br>
 
 Your task: write a bot that will give the user the weather forecast for a particular city. Choose the city according to your taste or where you live, it's not critical.
-
-<br><br>
+<br>
 
 **❕Bot requirements**<br>
 
