@@ -12,7 +12,7 @@ try{
   //write transformed vacations data in string format
   await fs.promises.writeFile("./data/transformedVacations.json",JSON.stringify(transformedVacations));
 } catch (error) {
-    console.log("error with reading/writing files");
+    console.log("error with reading/writing files: "+error);
   }
 }
 

@@ -38,7 +38,7 @@ async function readDataByPattern(quantityOfFiles,directory,filePattern,fileForma
       }
       return userData;
     } catch (error) {
-      console.log("error with reading files");
+      console.log("error with reading files: "+error);
     }
   }
   export{

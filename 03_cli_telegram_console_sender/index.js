@@ -17,8 +17,12 @@ program
   .alias("m")
   .description("Send a message to Telegram Bot.")
   .action(async (message) => {
-    //send message to user throught telegram bot
-    await bot.sendMessage(TELEGRAM_CHAT_ID, message);
+    try {
+      //send message to user throught telegram bot
+      await bot.sendMessage(TELEGRAM_CHAT_ID, message);
+    } catch (error) {
+      console.log("Error occured: " + error);
+    }
   });
 
 //when command 'p' or 'send-photo' entered by user
@@ -29,9 +33,12 @@ program
     "Send a photo to Telegram Bot.Just drag and drop it into console after p flag."
   )
   .action(async (path) => {
-    //send photo to user throught telegram bot
-    await bot.sendPhoto(TELEGRAM_CHAT_ID, path);
+    try {
+      //send photo to user throught telegram bot
+      await bot.sendPhoto(TELEGRAM_CHAT_ID, path);
+    } catch (error) {
+      console.log("Error occured: " + error);
+    }
   });
-
 
 program.parse(process.argv);

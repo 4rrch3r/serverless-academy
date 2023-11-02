@@ -15,7 +15,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-//readline instance tells a user to enter data throught console 
+//tell a user to enter data throught console 
 function inputDataQuestion() {
   rl.question(
     "Hello. Enter 10 words or digits deviding them in spaces: ",
@@ -23,7 +23,7 @@ function inputDataQuestion() {
   );
 }
 
-//readline instance tells a user to choose a sort method and handles it 
+//tell a user to choose a sort method and handles it 
 function inputHandler(inputData) {
   rl.question(
     `How would you like to sort values: \n
@@ -89,5 +89,5 @@ function inputHandler(inputData) {
   );
 }
 
-//call a function to start console app
+//start console app
 inputDataQuestion();

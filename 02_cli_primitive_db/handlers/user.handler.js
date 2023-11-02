@@ -26,11 +26,7 @@ async function searchUser(
   return user;
 }
 //creates user and adds user to db
-async function createUser(
-  userName,
-  dataSeparator,
-  dbPath
-) {
+async function createUser(userName,dataSeparator,dbPath) {
   //ask user to enter gender and age
   let answerWithUserInfo = await inquirer.prompt([
     {
