@@ -1,3 +1,10 @@
+# 8. JSON SORTING
+**How to run application:**
+
+`npm run start`<br>
+
+## Notes
+I've done this task in two ways. You can check this out in `utils/countFieldValues.js` file. Two functions: recursiveCountFieldValues(typical recursion in object keys) and countFieldValuesByString(converts object to string and searches the value). Final version of the app is using recursive way to search 'isDone' value.<br>
 ## Task Description
 
 In this task, we'll dive a little deeper into working with JSON.<br>

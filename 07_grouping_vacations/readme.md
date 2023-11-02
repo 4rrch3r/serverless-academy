@@ -1,3 +1,8 @@
+# 7. GROUPING VACATIONS
+**How to run application:**
+
+`npm run start`<br>
+
 ## Task Description
 
 Let's imagine we have a JSON file with a list of developers. Each has a unique id, name, as well as different vacation periods and other information. This data we need to format into a more convenient and universal form.<br>

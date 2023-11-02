@@ -1,3 +1,8 @@
+# 6. INSTAGRAM GIVEAWAY
+**How to run application:**
+
+`npm run start`<br>
+
 ## Task Description
 
 The goal of this task is to learn methods of sorting and selecting values. All you need to implement it is vanilla JavaScript without any external dependencies.<br>
