@@ -1,3 +1,8 @@
+# 1. CLI: INTERACTIVE SORT
+**How to run application**
+
+`npm run start`<br>
+
 ## Task Description
 
 Your first task is to write a small CLI application without any external dependencies that expects the user to enter a few words or numbers separated by a space. Next, the program should ask how to sort the user's input.
