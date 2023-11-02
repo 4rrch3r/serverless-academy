@@ -2,7 +2,7 @@ import { readDataByPattern,countNicknamesInFiles,countFrequencyOfUsernicknames }
 
 function uniqueUsernames(userData) {
     //get size of Set collection to get unique ones
-  return userData.totalUsernames.size;
+  return  new Set(userData.totalUsernames).size;
 }
 function existInAllFiles(countedNicknames ) {
    //call template function with quantity of all files

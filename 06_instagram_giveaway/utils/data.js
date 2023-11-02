@@ -23,7 +23,7 @@ async function readDataByPattern(quantityOfFiles,directory,filePattern,fileForma
     try {
       let userData = {
           //usernames from all files
-        totalUsernames: new Set(),
+        totalUsernames: [],
         //separated unique usernames from each file
         separatedFileInfo: {},
       };
@@ -33,7 +33,7 @@ async function readDataByPattern(quantityOfFiles,directory,filePattern,fileForma
         //split string to get array of string
         let splittedData = fileData.split("\n");
         //collect users data
-        userData.totalUsernames.add(...splittedData);
+        userData.totalUsernames.push(...splittedData);
         userData.separatedFileInfo[`out${i}.txt`] = Array.from( new Set(splittedData));
       }
       return userData;
