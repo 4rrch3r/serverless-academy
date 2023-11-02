@@ -1,5 +1,5 @@
 # 1. CLI: INTERACTIVE SORT
-**How to run application**
+**How to run application:**
 
 `npm run start`<br>
 
