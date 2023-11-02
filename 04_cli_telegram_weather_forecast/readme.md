@@ -1,3 +1,14 @@
+# 4. TELEGRAM BOT: WEATHER FORECAST
+**How to run application:**<br><br>
+_Universal way_<br>
+Hardcode values from `index.js` file for variables: `TELEGRAM_API_TOKEN`,`OWM_API_KEY`,`OWM_CITY_NAME`.<br>
+After this you can start bot with `npm run start` or `node index.js`.
+_Windows OS(PowerShell)_<br>
+You can set .env variables and start app like this: `$env:TELEGRAM_API_TOKEN="..."; $env:OWM_API_KEY="...";$env:OWM_CITY_NAME="...(e.g.Kyiv)";`<br>
+ `node index.js`<br><br>
+ _Linux/Mac OS(Unix-like OS)_<br>
+Create .env file and prepopulate it with variables.This line should work to set .env variables and start bot `env $(cat .env | xargs) node index.js`<br>
+
 ## Task Description
 
 This task is a good way to practice and understand: what third-party REST APIs are and how to work with them.<br>
