@@ -1,12 +1,12 @@
 # 3. CLI: TELEGRAM CONSOLE SENDER
-**How to run application:**
+**How to run application:**<br>
 _Universal way_<br>
 Hardcode values from `index.js` file for variables: `TELEGRAM_API_TOKEN`,`TELEGRAM_CHAT_ID`.<br>
-After this you can send messages. For example: `node index.js m Hello World`.
+After this you can send messages. For example: `node index.js m Hello World`.<br>
 _Windows OS(PowerShell)_<br>
 You can set .env variables and start app like this: `$env:TELEGRAM_API_TOKEN="..."; $env:TELEGRAM_CHAT_ID ="...";
  node index.js m Hello World`<br>
- _Linux/Mac OS(Unix-like OS)_
+ _Linux/Mac OS(Unix-like OS)_<br>
 Create .env file and prepopulate it with variables.This line should work to set .env variables and start app `env $(cat .env | xargs) node index.js m Hello World`<br>
 
 ## Task Description
