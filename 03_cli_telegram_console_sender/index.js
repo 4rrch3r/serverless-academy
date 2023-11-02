@@ -2,8 +2,8 @@ import { program } from "commander";
 import TelegramBot from "node-telegram-bot-api";
 
 //hardcoded telegram api token and chat id
-const TELEGRAM_API_TOKEN = "6708708920:AAF37bsP84Kq5phe8_G8pNj6MAzjcAM9u94";
-const TELEGRAM_CHAT_ID = "523702421";
+const TELEGRAM_API_TOKEN = process.env.TELEGRAM_API_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 //create a bot instance with telegram token
 const bot = new TelegramBot(TELEGRAM_API_TOKEN);
