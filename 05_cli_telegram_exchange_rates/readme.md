@@ -1,3 +1,14 @@
+# 5. TELEGRAM BOT: EXCHANGE RATES
+**How to run application:**<br><br>
+_Universal way_<br>
+Hardcode values from `index.js` file for variables: `TELEGRAM_API_TOKEN`.<br>
+After this you can start bot with `npm run start` or `node index.js`.<br><br>
+_Windows OS(PowerShell)_<br>
+You can set .env variables and start app like this: `$env:TELEGRAM_API_TOKEN="...";`<br>
+ `node index.js`<br><br>
+ _Linux/Mac OS(Unix-like OS)_<br>
+Create .env file and prepopulate it with variables.This line should work to set .env variables and start bot `env $(cat .env | xargs) node index.js`<br>
+
 ## Task Description
 
 In this task we will create a bot for getting the exchange rate. You can use a previously created bot, or create a new one.<br>
