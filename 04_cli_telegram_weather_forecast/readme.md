@@ -2,7 +2,7 @@
 **How to run application:**<br><br>
 _Universal way_<br>
 Hardcode values from `index.js` file for variables: `TELEGRAM_API_TOKEN`,`OWM_API_KEY`,`OWM_CITY_NAME`.<br>
-After this you can start bot with `npm run start` or `node index.js`.
+After this you can start bot with `npm run start` or `node index.js`.<br><br>
 _Windows OS(PowerShell)_<br>
 You can set .env variables and start app like this: `$env:TELEGRAM_API_TOKEN="..."; $env:OWM_API_KEY="...";$env:OWM_CITY_NAME="...(e.g.Kyiv)";`<br>
  `node index.js`<br><br>
