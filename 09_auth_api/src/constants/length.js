@@ -1,0 +1,3 @@
+const PASSWORD_MIN_LENGTH = 4;
+
+module.exports=PASSWORD_MIN_LENGTH;
