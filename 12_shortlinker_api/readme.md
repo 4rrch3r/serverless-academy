@@ -3,7 +3,12 @@
 
 
 
-## Documentation
+## Documentation### API Endpoints
+| HTTP Verbs | Endpoints | Action | Expect | Return codes | Request Example
+| --- | --- | --- |
+| POST | /link | To retrieve a short version of the link | _body_ `{link:string }` |  200/201/400/500 | _body_ `{link:"https://www.youtube.com/" }`
+| GET | /:shortLink | To access a resource by short version of the link | _route parameter_ `shortLink` |  302/400/404/500 |  _route parameter_ `1FGC9I`
+
 <br>
 
 ## Task Description
