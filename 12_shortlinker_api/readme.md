@@ -1,15 +1,24 @@
 # 12. SHORTLINKER API
 **How to run application:**
+_Node js version 20^_<br>
+Create .env file and prepopulate it with variables. After this simply run `npm run start`.<br><br>
+_Windows OS(PowerShell)_<br>
+You can set .env variables and start app like this: `$env:PORT="..."; $env:BASE_URL ="..."; $env:MONGODB_URL ="...";`<br>
+ `node index.js`<br><br>
+ _Linux/Mac OS(Unix-like OS)_<br>
+Create .env file and prepopulate it with variables.This line should work to set .env variables and start bot `env $(cat .env | xargs) node index.js`<br>
 
 
-
-## Documentation### API Endpoints
+## Documentation
 | HTTP Verbs | Endpoints | Action | Expect | Return codes | Request Example
 | --- | --- | --- | --- | --- | --- |
 | POST | /link | To retrieve a short version of the link | _body_ `{link:string }` |  200/201/400/500 | _body_ `{link:"https://www.youtube.com/" }`
 | GET | /:shortLink | To access a resource by short version of the link | _route parameter_ `shortLink` |  302/400/404/500 |  _route parameter_ `1FGC9I`
 
 <br>
+
+## Notes
+You can choose the length of the short link. Variable `SHORT_LINK_LENGTH` is located in src/constants/length.js<br>
 
 ## Task Description
 

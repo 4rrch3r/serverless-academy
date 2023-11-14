@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --env-file .env src/index.js"
+    "start": "node --env-file .env src/index.js"
   },
-  "author": "",
+  "author": "Igor Pilipchuk",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
