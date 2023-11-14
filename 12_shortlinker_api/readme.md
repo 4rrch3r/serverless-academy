@@ -1,12 +1,12 @@
 # 12. SHORTLINKER API
-**How to run application:**
+**How to run application:**<br>
 _Node js version 20^_<br>
 Create .env file and prepopulate it with variables. After this simply run `npm run start`.<br><br>
 _Windows OS(PowerShell)_<br>
 You can set .env variables and start app like this: `$env:PORT="..."; $env:BASE_URL ="..."; $env:MONGODB_URL ="...";`<br>
  `node index.js`<br><br>
  _Linux/Mac OS(Unix-like OS)_<br>
-Create .env file and prepopulate it with variables.This line should work to set .env variables and start bot `env $(cat .env | xargs) node index.js`<br>
+Create .env file and prepopulate it with variables.This line should work to set .env variables and start app `env $(cat .env | xargs) node index.js`<br>
 
 
 ## Documentation
