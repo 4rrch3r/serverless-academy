@@ -8,7 +8,6 @@ You can set .env variables and start app like this: `$env:PORT="..."; $env:BASE_
  _Linux/Mac OS(Unix-like OS)_<br>
 Create .env file and prepopulate it with variables.This line should work to set .env variables and start app `env $(cat .env | xargs) node index.js`<br>
 
-
 ## Documentation
 | HTTP Verbs | Endpoints | Action | Expect | Return codes | Request Example
 | --- | --- | --- | --- | --- | --- |
